@@ -37,7 +37,7 @@ body,
   .comments-page #header-bottom-right,
   .search-page #header-bottom-right,
   .wiki-page #header-bottom-right {
-    top: 11.1em !important; }
+    top: 11.3em !important; }
   .submit-page #header-bottom-right {
     top: 8em !important; }
   #header-bottom-right a {
@@ -204,6 +204,14 @@ form.toggle {
   border: 1em #FF9800 !important;
   transition: all .2s ease;
   border-style: none none none solid !important; }
+
+.md a {
+  color: #FF9800;
+  text-decoration: underline;
+  background-color: #FAFAFA; }
+  .md a:hover {
+    color: #FAFAFA;
+    background-color: #F57C00; }
 
 a[href="#s"] {
   cursor: default;
