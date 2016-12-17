@@ -227,7 +227,7 @@ a[href="#s"]:active::after {
   text-shadow: none;
   text-decoration: none; }
 
-a[href^="#announce"] {
+.side a[href*="announce"] {
   right: 5em;
   color: white !important;
   z-index: 99;
@@ -235,11 +235,11 @@ a[href^="#announce"] {
   position: absolute;
   background-color: #F57C00; }
 
-a[href="#announce1"] {
+.side a[href$="#announce1"] {
   top: 1.5em; }
 
-a[href="#announce2"] {
+.side a[href$="#announce2"] {
   top: 4.2em; }
 
-a[href="#announce3"] {
+.side a[href$="#announce3"] {
   top: 6.8em; }

@@ -1,4 +1,4 @@
-//main: admicos3.scss
+//main: ../admicos3.scss
 
 // SPOILER /////////////////////////////////////////////////////////////////////
 
@@ -33,23 +33,25 @@ a[href="#s"]:active::after{
 
 // ANNOUNCEMENTS ///////////////////////////////////////////////////////////////
 
-a[href^="#announce"] {
-    right: 5em;
-    color: white !important;
-    z-index: 99;
-    padding: .5em;
-    position: absolute;
-    background-color: $secondColorDarker;
-}
+.side {
+    & a[href*="announce"] {
+        right: 5em;
+        color: white !important;
+        z-index: 99;
+        padding: .5em;
+        position: absolute;
+        background-color: $secondColorDarker;
+    }
 
-a[href="#announce1"] {
-    top: 1.5em;
-}
+    & a[href$="#announce1"] {
+        top: 1.5em;
+    }
 
-a[href="#announce2"] {
-    top: 4.2em;
-}
+    & a[href$="#announce2"] {
+        top: 4.2em;
+    }
 
-a[href="#announce3"] {
-    top: 6.8em;
+    & a[href$="#announce3"] {
+        top: 6.8em;
+    }
 }
