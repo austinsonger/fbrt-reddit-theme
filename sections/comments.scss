@@ -1,0 +1,23 @@
+//main: admicos3.scss
+
+.usertext-buttons [type="submit"] {
+    @include btn($mainColor, $mainColorDarker);
+
+    color: $white;
+    padding: .7em 1em;
+}
+
+.new-comment .usertext-body {
+    border: 0;
+    background-color: transparent;
+}
+
+.thing.comment {
+    border-style: none none none none !important;
+}
+
+.comment.RES-keyNav-activeThing {
+    border: 1em $secondColor !important;
+    transition: all .2s ease;
+    border-style: none none none solid !important;
+}

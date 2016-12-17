@@ -1,0 +1,55 @@
+//main: admicos3.scss
+
+// SPOILER /////////////////////////////////////////////////////////////////////
+
+a[href="#s"]{
+    cursor: default;
+    font-size: 0;
+    visibility: hidden;
+}
+
+a[href="#s"]::after{
+    color: transparent;
+    content: attr(title);
+    padding: 0 0.5em 0 0.5em;
+    font-size:small;
+    visibility: visible;
+    transition: ease-in-out .2s;
+    text-shadow: 0 0 15px $secondColorDarker,
+                 0 0 15px $secondColorLighter,
+                 0 0 15px $secondColorDarker,
+                 0 0 15px $secondColor;
+}
+
+a[href="#s"]:hover::after,
+a[href="#s"]:active::after{
+    color: $text;
+    cursor: default;
+    transition: ease-in-out .5s;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+
+// ANNOUNCEMENTS ///////////////////////////////////////////////////////////////
+
+a[href^="#announce"] {
+    right: 5em;
+    color: white !important;
+    z-index: 99;
+    padding: .5em;
+    position: absolute;
+    background-color: $secondColorDarker;
+}
+
+a[href="#announce1"] {
+    top: 1.5em;
+}
+
+a[href="#announce2"] {
+    top: 4.2em;
+}
+
+a[href="#announce3"] {
+    top: 6.8em;
+}

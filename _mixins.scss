@@ -1,0 +1,21 @@
+//main: admicos3.scss
+
+@mixin btn($col, $pressedCol) {
+    border: 0;
+    background: $col;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 1);
+    border-radius: .2em;
+
+    &:hover {
+        transition: all 0.5s ease;
+        background: $pressedCol;
+        box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+    }
+
+    &:active {
+        transition: all 0.5s ease;
+        background: $pressedCol;
+        box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 1);
+    }
+}

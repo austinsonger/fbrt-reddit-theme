@@ -1,0 +1,42 @@
+//main: admicos3.scss
+
+#siteTable {
+    background: white;
+    margin-top: 2em;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.28);
+    margin-left: 14px;
+    margin-right: 325px;
+    margin-bottom: 2em;
+    border-radius: .7em;
+
+    & > .thing {
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        &.stickied {
+            background: $sticky;
+        }
+
+        & > .rank {
+            display: none;
+        }
+
+        &:first-child {
+            border-top-left-radius: .7em;
+            border-top-right-radius: .7em;
+        }
+    }
+}
+
+form.toggle {
+    background: transparent !important;
+}
+
+.thing.RES-keyNav-activeThing:not(.comment) {
+    background-color: $mainColorLighter;
+}
+
+.entry.RES-keyNav-activeElement,
+.entry.RES-keyNav-activeElement .md-container {
+    background: transparent !important;
+}

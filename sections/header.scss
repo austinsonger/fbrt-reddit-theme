@@ -1,0 +1,89 @@
+//main: admicos3.scss
+
+#sr-header-area,
+#sr-header-area a,
+#RESShortcutsEditContainer,
+#RESShortcutsEditContainer * {
+    background-color: $mainColor;
+    color: $white;
+    border: 0;
+}
+
+#header-bottom-left {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: $mainColor;
+
+    #header-img {
+        width: 31px;
+        height: 24px;
+
+        margin-left: 5em;
+    }
+
+    .redditname,
+    .redditname > a {
+        color: $white;
+        font-size: 1.5em;
+        font-weight: lighter;;
+    }
+}
+
+#header-bottom-right {
+    top: 10em !important;
+    background-color: transparent;
+    z-index: 100;
+
+    .listing-page &,
+    .comments-page &,
+    .search-page &,
+    .wiki-page & {
+        top: 11.1em !important;
+    }
+
+    .submit-page & {
+        top: 8em !important;
+    }
+
+    & a {
+        color: $white;
+        height: 1em !important;
+
+        &.access-required {
+            top: -4px;
+        }
+    }
+
+    & #userbarToggle {
+        border: 0;
+        background-color: transparent;
+    }
+}
+
+.tabmenu {
+    width: 100%;
+    margin-bottom: -3em;
+    background-color: $mainColorDarker;
+
+    & > li {
+        & > a {
+            color: $white;
+            border: 0 !important;
+            font-size: 1.25em;
+            font-weight: lighter;
+            background-color: transparent !important;
+        }
+
+        &.selected > a {
+            color: $secondColorDarker;
+        }
+    }
+
+    &.formtab {
+        left: -.8em;
+        width: 100.7%;
+        bottom: 5em !important;
+        z-index: 99;
+        position: relative;
+    }
+}
