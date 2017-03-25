@@ -18,7 +18,8 @@ body,
 #header-bottom-left {
   padding-top: 3em;
   padding-bottom: 3em;
-  background-color: #3F51B5; }
+  height: 47px;
+  background: #3F51B5; }
   #header-bottom-left #header-img {
     width: 31px;
     height: 24px;
@@ -37,7 +38,11 @@ body,
   .comments-page #header-bottom-right,
   .search-page #header-bottom-right,
   .wiki-page #header-bottom-right {
-    top: 11.3em !important; }
+    /*
+         * Blame reddit for double negative
+         * https://redd.it/4ra0eg
+         */
+    top: calc(9em - -47px) !important; }
   .submit-page #header-bottom-right {
     top: 8em !important; }
   #header-bottom-right a {
@@ -51,7 +56,7 @@ body,
 
 .tabmenu {
   width: 100%;
-  margin-bottom: -3em;
+  margin-bottom: calc(-47px - 7px);
   background-color: #283593; }
   .tabmenu > li > a {
     color: #FAFAFA;
@@ -216,7 +221,8 @@ form.toggle {
 a[href="#s"] {
   cursor: default;
   font-size: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  text-decoration: none; }
 
 a[href="#s"]::after {
   color: transparent;
@@ -244,10 +250,10 @@ a[href="#s"]:active::after {
   background-color: #F57C00; }
 
 .side a[href$="#announce1"] {
-  top: 1.5em; }
+  top: calc(-2em - -47px); }
 
 .side a[href$="#announce2"] {
-  top: 4.2em; }
+  top: calc(.5em - -47px); }
 
 .side a[href$="#announce3"] {
-  top: 6.8em; }
+  top: calc(3em - -47px); }

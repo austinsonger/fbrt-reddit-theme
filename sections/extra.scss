@@ -6,6 +6,7 @@ a[href="#s"]{
     cursor: default;
     font-size: 0;
     visibility: hidden;
+    text-decoration: none;
 }
 
 a[href="#s"]::after{
@@ -44,14 +45,14 @@ a[href="#s"]:active::after{
     }
 
     & a[href$="#announce1"] {
-        top: 1.5em;
+        top: calc(-2em - -#{$headerHeight});
     }
 
     & a[href$="#announce2"] {
-        top: 4.2em;
+        top: calc(.5em - -#{$headerHeight});
     }
 
     & a[href$="#announce3"] {
-        top: 6.8em;
+        top: calc(3em - -#{$headerHeight});
     }
 }

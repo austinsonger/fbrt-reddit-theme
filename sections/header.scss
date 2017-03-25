@@ -12,7 +12,14 @@
 #header-bottom-left {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: $mainColor;
+    height: $headerHeight;
+
+    @if $enableHeaderImage {
+        background: $headerImage;
+        background-position: center;
+    } @else {
+        background: $mainColor;
+    }
 
     #header-img {
         width: 31px;
@@ -38,7 +45,11 @@
     .comments-page &,
     .search-page &,
     .wiki-page & {
-        top: 11.3em !important;
+        /*
+         * Blame reddit for double negative
+         * https://redd.it/4ra0eg
+         */
+        top: calc(9em - -#{$headerHeight}) !important;
     }
 
     .submit-page & {
@@ -62,7 +73,7 @@
 
 .tabmenu {
     width: 100%;
-    margin-bottom: -3em;
+    margin-bottom: calc(-#{$headerHeight} - 7px);
     background-color: $mainColorDarker;
 
     & > li {
